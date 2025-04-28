@@ -109,6 +109,15 @@
   width: 100%;
 }
 
+#Medlem, #Recept, #Matkasse{
+  display:flexbox;
+  flex-direction:row;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+}
+
 /*Mobilanpassning*/
 @media (max-width: 768px) {
   .hamburger {
