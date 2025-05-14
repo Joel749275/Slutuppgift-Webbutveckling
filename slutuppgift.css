@@ -1,3 +1,10 @@
+   /*Main Font*/
+   @font-face {
+       font-family: 'RalstedaBolditalic-MVwpx';
+       src: url('fonts/ralstedabolditalic-mvwpx-webfont.woff');
+       font-weight: normal;
+       font-style: normal;
+   }
 .hamburger {
   display: none;
   font-size: 28px;
@@ -8,27 +15,42 @@
   z-index: 100;
 }
 
+body {
+background-color: #FFFFFF;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+font-family: 'RalstedaBolditalic-MVwpx', sans-serif;
+}
+
 /* Navbar container */
 .navbar {
-    background-color: #333;
-    font-family: Arial;
-    border-radius: 5px;
+    background-color: #022B3A;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
     position: relative;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(190deg, #022B3A, #028090);
   }
   
   /* Links inside the navbar */
   .navbar a {
-    font-size: 16px;
+    font-size: 22px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 5px;
+    transition : background-color 0.3s ease, transform 0.2s ease;
   }
   
   /* The dropdown container */
@@ -39,44 +61,56 @@
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 12px 20px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dropbtn{
+    font-size: 22px;
   }
   
-  /* Add a red background color to navbar links on hover */
+  /*Hover effect for dropdown and navbar links*/
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #028090;
+    transform: scale(1.05);
   }
   
-  /* Dropdown content (hidden by default) */
+  /* Dropdown content*/
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     top: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 18px;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #333;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
   }
   
-  /* Add a grey background color to dropdown links on hover */
+  /* Hover effect for dropdown-links*/
   .dropdown-content a:hover {
     background-color: #ddd;
   }
@@ -84,7 +118,6 @@
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-    border-radius: 5px;
   }
 
   .bar {
@@ -94,7 +127,7 @@
     border-radius: 5px;
   }
 #logo {
-  width: 120px;
+  width: 100px;
   text-align: center;
 }
 
@@ -128,7 +161,7 @@ h1{
 }
 
 .flex-container3 > div {
-  background-color: #afd1fa;
+  background-color: #BFDBF7;
   margin: 70px;
   text-align: center;
   font-size: 30px;
@@ -164,15 +197,17 @@ div img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0;
+    gap: 10px;
     padding: 10px 0;
-    background-color: #333;
-    border-radius: 0 0 10px 10px;
+    background-color: #022B3A;
+    border-radius: 0;
     width: 100%;
     position: absolute;
-    top: 120px;
+    top: 60px;
     left: 0;
     z-index: 99;
+    margin: 0;
+    overflow: hidden;
   }
 
   .navbar.active {
@@ -184,23 +219,25 @@ div img {
     width: 100%;
     text-align: center;
     padding: 12px;
+    margin: 0;
   }
 
   .dropdown {
     width: 100%;
     position: relative;
+    text-align: center;
   }
 
+#logo{
+  width: 20%;
+  margin: 0 auto;
+}
   .dropdown-content {
-    display: none;
     position: relative;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
+    top: 0;
     width: 100%;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    border-radius: 0;
+    text-align: center;
   }
 
   .dropdown:hover .dropdown-content {
