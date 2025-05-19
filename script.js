@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Cola 1.5.webp"
     },
     {
-      namn: "Tvättmedel flyttande parfymfri 1320ml Via",
+      namn: "Tvättmedel parfymfri 1320ml Via",
       pris: "71,90 kr",
       bild: "Images/matvaror/Tvättmedel.webp"
     },
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Pepsi.webp"
     },
     {
-      namn: "Gourmetskinka rökt tunna skivor 200g Pärsons",
+      namn: "Gourmetskinka rökta skivor 200g Pärsons",
       pris: "31,90 kr",
       bild: "Images/matvaror/Skinka.webp"
     },
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Potatis fast.webp"
     },
     {
-      namn: "Druvor thompson seedless gröna kärnfira 500g ICA",
+      namn: "Druvor gröna kärnfira 500g ICA",
       pris: "37,90 kr",
       bild: "Images/matvaror/Druvor.webp"
     },
@@ -201,12 +201,12 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Bearnaisesås.webp"
     },
     {
-      namn: "BBQ sås orginal 510g sweet baby rays",
+      namn: "BBQ sås 510g sweet baby rays",
       pris: "53,90 kr",
       bild: "Images/matvaror/BBQ.webp"
     },
     {
-      namn: "Tortilla orginal medium 8p 320g Santa Maria",
+      namn: "Tortilla orginal medium 8p Santa Maria",
       pris: "16,90 kr",
       bild: "Images/matvaror/Tortilla.webp"
     },
@@ -261,27 +261,27 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Kaviar.webp"
     },
     {
-      namn: "Energidryck Rio Punch 50cl Monster Energy",
+      namn: "Rio Punch 50cl Monster Energy",
       pris: "16,90 kr",
       bild: "Images/matvaror/Rio Punch.webp"
     },
     {
-      namn: "Energidryck Ultra 50cl Monster Energy",
+      namn: "Ultra 50cl Monster Energy",
       pris: "16,90 kr",
       bild: "Images/matvaror/Ultra.webp"
     },
     {
-      namn: "Energidryck Pipeline punch 50cl Monster Energy",
+      namn: "Pipeline-punch 50cl Monster Energy",
       pris: "16,90 kr",
       bild: "Images/matvaror/Pipeline punch.webp"
     },
     {
-      namn: "Energidryck Ultra Rosá 50cl Monster Energy",
+      namn: "Ultra Rosá 50cl Monster Energy",
       pris: "16,90 kr",
       bild: "Images/matvaror/Ultra rosá.webp"
     },
     {
-      namn: "Energidryck Absolutely zero 50cl Monster Energy",
+      namn: "Absolutely zero 50cl Monster Energy",
       pris: "16,90 kr",
       bild: "Images/matvaror/Absolutely zero.webp"
     },
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
       div.innerHTML = `
         <img src="${vara.bild}" alt="${vara.namn}">
         <h3>${vara.namn}</h3>
-        <p>${vara.pris}</p>
+        <p class="pris">${vara.pris}</p>
       `;
       container.appendChild(div);
     });
