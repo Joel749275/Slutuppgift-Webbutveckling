@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const div = document.createElement('div');
       div.className = 'produkt';
       div.innerHTML = `
-        <img src="${vara.bild}" alt="${vara.namn}">
+        <img src="${vara.bild}" alt="${vara.namn}" loading="lazy">
         <h3>${vara.namn}</h3>
         <p class="pris">${vara.pris}</p>
       `;
