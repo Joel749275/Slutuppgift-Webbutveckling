@@ -1,3 +1,4 @@
+/*----Hamburgermeny----*/
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const navbar = document.querySelector(".navbar");
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  /*----Matvaror----*/
   const matvaror = [
     {
       namn: "Arla mellanmjölk 1L",
@@ -334,3 +336,27 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById('matvaror-container')) {
     visaMatvaror();
   }
+
+/*----MAP----*/
+
+  const stores = [
+    { name: "Butik Östermalm", lat: 59.341934, lng: 18.097037},
+    { name: "Butik Täby", lat: 59.44510, lng: 18.07121},
+    { name:"Butik Danderyd", lat: 59.397675, lng: 18.036667},
+    { name:"Butik Nacka", lat: 59.310252, lng: 18.163755},
+    {name:"Butik Vaxholm", lat: 59.403442, lng: 18.351174},
+  ];
+
+  // Start kartan
+  const map = L.map('map').setView([59.3293, 18.0686], 9);
+
+  //OpenStreetMap-kartan
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  //Markerar butikerna på kartan
+  stores.forEach(store => {
+    L.marker([store.lat, store.lng]).addTo(map)
+      .bindPopup(store.name);
+  });
