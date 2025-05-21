@@ -13,14 +13,45 @@ document.addEventListener("DOMContentLoaded", () => {
     dropbtn.addEventListener("click", () => {
       dropdown.classList.toggle("open");
     });
+    
+    /*---KATEGORIER---*/
+  if (document.getElementById('matvaror-container')) {
+  visaMatvaror();
+
+  // Dropdown-funktionalitet
+  const kategoriDropdown = document.querySelector('.kategori-dropdown');
+  const kategoriBtn = document.getElementById('kategoriBtn');
+  const kategoriList = document.getElementById('kategoriList');
+
+  kategoriBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    kategoriDropdown.classList.toggle('open');
+  });
+
+  kategoriList.addEventListener('click', (e) => {
+    if (e.target.dataset.kategori) {
+      visaMatvaror(e.target.dataset.kategori);
+      kategoriDropdown.classList.remove('open');
+      kategoriBtn.innerHTML = `Kategorier &#9662; - ${e.target.innerText}`;
+    }
+  });
+
+  // Stänger dropdown vid klick utanför
+  document.addEventListener('click', (e) => {
+    if (!kategoriDropdown.contains(e.target)) {
+      kategoriDropdown.classList.remove('open');
+    }
+  });
+}
   });
   
-  /*----Matvaror----*/
+  /*----MATVAROR----*/
   const matvaror = [
     {
       namn: "Färsk mellanmjölk 1,5% 1L Arla Ko®",
       pris: "14,50 kr",
-      bild: "Images/matvaror/Arla mellanmjölk.webp"
+      bild: "Images/matvaror/Arla mellanmjölk.webp",
+      kategori: "Mejeri och ost"
     },
     {
       namn: "Kungsörnen spagetti 1kg",
@@ -478,10 +509,13 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Chips dill.webp"
     },
   ];
-  
-  function visaMatvaror() {
-    const container = document.getElementById('matvaror-container');
-    matvaror.forEach(vara => {
+
+function visaMatvaror(valdKategori = "alla") {
+  const container = document.getElementById('matvaror-container');
+  container.innerHTML = "";
+  matvaror
+    .filter(vara => valdKategori === "alla" || vara.kategori === valdKategori)
+    .forEach(vara => {
       const div = document.createElement('div');
       div.className = 'produkt';
       div.innerHTML = `
@@ -491,12 +525,8 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       container.appendChild(div);
     });
-  }
+}
   
-  if (document.getElementById('matvaror-container')) {
-    visaMatvaror();
-  }
-
 /*----MAP----*/
 
   const stores = [

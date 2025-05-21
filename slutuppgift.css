@@ -329,6 +329,16 @@ h1 {
   .dropdown-content a:hover {
     background-color: #ddd;
   }
+
+  .kategori-dropdown {
+    width: 100%;
+    justify-content: center;
+  }
+  #kategoriBtn, .kategori-list {
+    width: 90vw;
+    min-width: unset;
+    font-size: 18px;
+}
 }
 
 #map{
@@ -338,4 +348,60 @@ h1 {
   z-index: 1;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/*------KATEGORIER FÖR MATVAROR-------*/
+.kategori-dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#kategoriBtn {
+  background: #fff;
+  color: #222;
+  border: 2px solid #028090;
+  border-radius: 6px;
+  padding: 10px 30px 10px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 180px;
+  text-align: center;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  position: relative;
+  z-index: 11;
+}
+
+.kategori-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #028090;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  width: max-content;
+  min-width: 180px;
+  z-index: 10;
+  text-align: center;
+}
+
+.kategori-list div {
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+  text-align: center;
+}
+
+.kategori-list div:hover {
+  background: #e0f7fa;
+}
+
+.kategori-dropdown.open .kategori-list {
+  display: block;
 }
