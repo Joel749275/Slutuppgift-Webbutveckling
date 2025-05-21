@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /*----Matvaror----*/
   const matvaror = [
     {
-      namn: "Arla mellanmjölk 1L",
+      namn: "Färsk mellanmjölk 1,5% 1L Arla Ko®",
       pris: "14,50 kr",
       bild: "Images/matvaror/Arla mellanmjölk.webp"
     },
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bild: "Images/matvaror/Levain.webp"
     },
     {
-      namn: "Smör svenskt 825 500g Arla",
+      namn: "Smör svenskt 825 500g Arla®",
       pris: "64,90 kr",
       bild: "Images/matvaror/Smör svenskt.webp"
     },
@@ -316,6 +316,166 @@ document.addEventListener("DOMContentLoaded", () => {
       namn: "Kit Kat mini bag 200g Nestle",
       pris: "36,90 kr",
       bild: "Images/matvaror/Kit Kat.webp"
+    },
+    {
+      namn: "Bad & Toalettpapper 16p ICA",
+      pris: "59,90 kr",
+      bild: "Images/matvaror/Toalettpapper.webp"
+    },
+    {
+      namn: "Vispgrädde 36% 5dl ICA",
+      pris: "29,90 kr",
+      bild: "Images/matvaror/Vispgrädde.webp"
+    },
+    {
+      namn: "Kycklingfilé fryst 1kg Kronfågel",
+      pris: "99,90 kr",
+      bild: "Images/matvaror/Kycklingfilé fryst.webp"
+    },
+    {
+      namn: "Grillspett Bambu 100p",
+      pris: "14,90 kr",
+      bild: "Images/matvaror/Grillspett.webp"
+    },
+    {
+      namn: "Babyplommontomater 500g ICA",
+      pris: "34,90 kr",
+      bild: "Images/matvaror/Babyplommontomater.webp"
+    },
+    {
+      namn: "Ris långkornigt 1kg Ben's Orginal",
+      pris: "35,90 kr",
+      bild: "Images/matvaror/Ris Ben 1kg.webp"
+    },
+    {
+      namn: "Yoghurt Turkisk naturell 10% 100g Salakis",
+      pris: "35,90 kr",
+      bild: "Images/matvaror/Turkisk yogurt.webp"
+    },
+    {
+      namn: "Apelsinjuice Nypressad 850ml Brämhults",
+      pris: "46,90 kr",
+      bild: "Images/matvaror/Apelsinjuice.webp"
+    },
+    {
+      namn: "Texmex ost riven 29% 150g Arla köket®",
+      pris: "27,90 kr",
+      bild: "Images/matvaror/Texmex ost.webp"
+    },
+    {
+      namn: "Grillkorv bacon&ost 59% kötthalt 480g Scan",
+      pris: "25,90 kr",
+      bild: "Images/matvaror/Grillkorv scan.webp"
+    },
+    {
+      namn: "Knäckebröd sport 550g Wasa",
+      pris: "22,90 kr",
+      bild: "Images/matvaror/Knäckebröd sport.webp"
+    },
+    {
+      namn: "Vaniljyoghurt päron slät 2.1% 1kg Valio",
+      pris: "26,90 kr",
+      bild: "Images/matvaror/Vaniljyoghurt päron.webp"
+    },
+    {
+      namn: "Guldsalami skivad 100g Grilstad",
+      pris: "25,50 kr",
+      bild: "Images/matvaror/Guldsalami.webp"
+    },
+    {
+      namn: "Knäckebröd rågi 550g Wasa",
+      pris: "24,90 kr",
+      bild: "Images/matvaror/Knäckebröd rågi.webp"
+    },
+    {
+      namn: "My pizza slice ham&cheese 170g Dr.Oetker",
+      pris: "17,90 kr",
+      bild: "Images/matvaror/Fryspizza Dr.Oetker.webp"
+    },
+    {
+      namn: "Handtvål fläder rabarber 300ml Bliw",
+      pris: "17,90 kr",
+      bild: "Images/matvaror/Handtvål.webp"
+    },
+  {
+      namn: "Glass salted caramel 460ml Häagen dazs",
+      pris: "53,90 kr",
+      bild: "Images/matvaror/Glass salted caramel.webp"
+    },
+    {
+      namn: "Smoothie vitamin blåbär hallon 850ml Brämhults",
+      pris: "48,90 kr",
+      bild: "Images/matvaror/Smoothie blåbär.webp"
+    },
+    {
+      namn: "Fruktdryck hallon&svartvinbär 50cl MER",
+      pris: "12,90 kr",
+      bild: "Images/matvaror/MER hallon.webp"
+    },
+    {
+      namn: "Fruktdryck päron 50cl MER",
+      pris: "12,90 kr",
+      bild: "Images/matvaror/MER päron.webp"
+    }, 
+    {
+      namn: "Stilldryck passionfrukt 50cl MER",
+      pris: "12,90 kr",
+      bild: "Images/matvaror/MER passion.webp"
+    },
+    {
+      namn: "Snabbkaffe refill lyx mörkrost 200g Nescafé",
+      pris: "88,90 kr",
+      bild: "Images/matvaror/Snabbkaffe.webp"
+    },
+    {
+      namn: "Glass vanlij 460ml Häagen Dazs",
+      pris: "53,90 kr",
+      bild: "Images/matvaror/Glass vanilj.webp"
+    },
+    {
+      namn: "Hårspray volume 250ml Taft Schawarzkopf",
+      pris: "44,50 kr",
+      bild: "Images/matvaror/Hårspray.webp"
+    },
+    {
+      namn: "Hårmousse volume 150ml Taft Schawarzkopf",
+      pris: "41,90 kr",
+      bild: "Images/matvaror/Hårmousse.webp"
+    },
+    {
+      namn: "Kassler ca 600g ICA",
+      pris: "58,14 kr",
+      bild: "Images/matvaror/Kassler.webp"
+    },
+    {
+      namn: "Pulled prok med BBQ glaze 550g ICA",
+      pris: "64,90 kr",
+      bild: "Images/matvaror/Pulled pork.webp"
+    },
+    {
+      namn: "Skinka strimlad rökt 180g ICA",
+      pris: "21,90 kr",
+      bild: "Images/matvaror/Skinka strimlad.webp"
+    },
+    {
+      namn: "Färsk standardmjölk 3% 1L Arla Ko®",
+      pris: "14,90 kr",
+      bild: "Images/matvaror/Arla standardmjölk.webp"
+    },
+    {
+      namn: "Färsk lättmjölk 0,5% 1L Arla Ko®",
+      pris: "13,90 kr",
+      bild: "Images/matvaror/Arla lättmjölk.webp"
+    },
+    {
+      namn: "Kvarg mild vanilj 0,2% laktosfri 1kg Arla®",
+      pris: "42,90 kr",
+      bild: "Images/matvaror/Arla kvarg.webp"
+    },
+    {
+      namn: "Chips dill 275g Estrella",
+      pris: "27,90 kr",
+      bild: "Images/matvaror/Chips dill.webp"
     },
   ];
   
