@@ -167,7 +167,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #BFDBF7;
+  background-color: #028090;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -195,7 +195,6 @@ h1 {
 .flex-container3 h3 {
   margin: 0;
   font-size: 20px;
-  font-family: 'Lilita One', Arial, sans-serif;
   height: 40%;
   display: flex;
   align-items: center;
@@ -508,3 +507,8 @@ footer a:hover {
 footer strong {
   color: #028090;
 }
+
+  h2, h4{
+    color: #FFFFFF;
+    text-shadow: 0 0 6px #000, 0 0 2px #000
+  }
