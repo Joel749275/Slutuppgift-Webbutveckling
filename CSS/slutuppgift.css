@@ -1,7 +1,7 @@
 /*Main Font*/
 @font-face {
     font-family: 'RalstedaBolditalic-MVwpx';
-    src: url('fonts/ralstedabolditalic-mvwpx-webfont.woff');
+    src: url('../fonts/ralstedabolditalic-mvwpx-webfont.woff');
     font-weight: normal;
     font-style: normal;
 }
