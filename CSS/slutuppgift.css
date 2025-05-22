@@ -1,4 +1,4 @@
-/*Main Font*/
+/* Main Font */
 @font-face {
     font-family: 'RalstedaBolditalic-MVwpx';
     src: url('../fonts/ralstedabolditalic-mvwpx-webfont.woff');
@@ -23,6 +23,7 @@ body {
   right: 20px;
   z-index: 100;
 }
+
 
 /* Navbar container */
 .navbar {
@@ -75,7 +76,7 @@ body {
   font-size: 22px;
 }
 
-/*Hover effect*/
+/*Hover effect navbar*/
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #028090;
   transform: scale(1.05);
@@ -146,6 +147,7 @@ h1 {
   padding: 10px;
 }
 
+
 /* ------- FLEX-CONTAINER3: GEMENSAM LAYOUT FÖR RECEPT OCH MIDDAG ------- */
 .flex-container3 {
   display: flex;
@@ -201,6 +203,7 @@ h1 {
   justify-content: center;
 }
 
+
 /* -------- MATVAROR-GRID: ENDAST FÖR MATVAROR-SIDAN ------- */
 .matvaror-grid > div {
   display: flex;
@@ -251,6 +254,7 @@ h1 {
   justify-content: center;
 }
 
+
 /* ------- VIDEO -------- */
 #Background {
   display: block;
@@ -258,6 +262,7 @@ h1 {
   margin: 0 auto;
   object-fit: cover;
 }
+
 
 /* -------- MOBILANPASSNING -------- */
 @media (max-width: 768px) {
@@ -353,6 +358,7 @@ h1 {
   }
 }
 
+
 #map{
   height: 400px;
   width: 80%;
@@ -361,6 +367,7 @@ h1 {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 
 /*------KATEGORIER FÖR MATVAROR-------*/
 .kategori-dropdown {
@@ -417,6 +424,7 @@ h1 {
 .kategori-dropdown.open .kategori-list {
   display: block;
 }
+
 
 /*------- FOOTER -------*/
 footer {
@@ -512,3 +520,120 @@ footer strong {
     color: #FFFFFF;
     text-shadow: 0 0 6px #000, 0 0 2px #000
   }
+
+
+/*------KONTAKT FORMULÄR-------*/
+#kontaktForm {
+  max-width: 400px;
+  margin: 30px auto 40px auto;
+  background: #f5fafd;
+  padding: 28px 24px 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(2,43,58,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#kontaktForm label {
+  font-weight: bold;
+  color: #022B3A;
+  margin-bottom: 4px;
+}
+
+#kontaktForm input,
+#kontaktForm textarea {
+  padding: 10px;
+  border: 1.5px solid #028090;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  background: #fff;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+#kontaktForm input:focus,
+#kontaktForm textarea:focus {
+  border-color: #022B3A;
+  outline: none;
+}
+
+#kontaktForm button {
+  background: #028090;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+#kontaktForm button:hover {
+  background: #022B3A;
+}
+
+#formError {
+  margin-top: 6px;
+  min-height: 22px;
+  font-size: 15px;
+}
+
+/*------MEDLEM------*/
+.medlemsfördelar {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #000;
+  letter-spacing: 1px;
+  text-shadow: 0 0
+}
+
+ul.medlemsfördelar-lista {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 24px auto 32px auto;
+}
+
+ul.medlemsfördelar-lista li {
+  background: linear-gradient(90deg, #028090 0%, #56cfe1 100%);
+  color: #fff;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(2,43,58,0.07);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.15s;
+}
+
+ul.medlemsfördelar-lista li::before {
+  content: "✔";
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+ul.medlemsfördelar-lista li:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #022B3A 0%, #028090 100%);
+}
+
+.stammis-info {
+  max-width: 500px;
+  margin: 18px auto 28px auto;
+  background: #f5fafd;
+  color: #022B3A;
+  font-size: 1.13rem;
+  padding: 16px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(2,43,58,0.07);
+  text-align: center;
+  line-height: 1.6;
+}

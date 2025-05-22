@@ -43,6 +43,40 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 }
+
+  // Formulärvalidering
+  const kontaktForm = document.getElementById('kontaktForm');
+  if (kontaktForm) {
+    kontaktForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('namn').value.trim();
+      const message = document.getElementById('address').value.trim();
+      const errorDiv = document.getElementById('formError');
+      errorDiv.textContent = "";
+
+      let valid = true;
+      if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) {
+        errorDiv.textContent += "Ange en giltig e-postadress. ";
+        valid = false;
+      }
+      if (subject.length === 0) {
+        errorDiv.textContent += "Ange ett namn. ";
+        valid = false;
+      }
+      if (message.length === 0) {
+        errorDiv.textContent += "Ange din address.";
+        valid = false;
+      }
+      if (valid) {
+        errorDiv.style.color = "green";
+        errorDiv.textContent = "Du är mu medlem!";
+        kontaktForm.reset();
+      } else {
+        errorDiv.style.color = "red";
+      }
+    });
+  }
   });
   
   /*----MATVAROR----*/
