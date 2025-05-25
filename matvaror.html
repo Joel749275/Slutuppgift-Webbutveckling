@@ -12,70 +12,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+  <header>
     <div class="Logga">
       <img id="logo" src="Images/logo.png" alt="Logga">
     </div>
-
     <div class="hamburger">&#9776;</div>
-
-      <div class="navbar">
-        <a href="hem.html">Hem</a>
-        <a href="matvaror.html">Matvaror</a>
-        <a href="stammis.html">Bli stammis</a>
-        <a href="Butiker.html">Butiker</a>
-        <div class="dropdown">
-          <button class="dropbtn">Recept
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="Frukost.html">Frukost tips</a>
-            <a href="Lunch.html">Lunch tips</a>
-            <a href="Middag.html">Middags tips</a>
-          </div>
+    <nav class="navbar">
+      <a href="hem.html">Hem</a>
+      <a href="matvaror.html">Matvaror</a>
+      <a href="stammis.html">Bli stammis</a>
+      <a href="Butiker.html">Butiker</a>
+      <div class="dropdown">
+        <button class="dropbtn">Recept
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Frukost.html">Frukost tips</a>
+          <a href="Lunch.html">Lunch tips</a>
+          <a href="Middag.html">Middags tips</a>
         </div>
       </div>
-  <h1>Vårt sortiment:</h1>
-  <div class="kategori-dropdown">
-  <button id="kategoriBtn">Kategorier &#9662;</button>
-  <div id="kategoriList" class="kategori-list">
-    <div data-kategori="alla">Alla</div>
-    <div data-kategori="Mejeri och ost">Mejeri och ost</div>
-    <div data-kategori="Fryst">Fryst</div>
-    <div data-kategori="Kött">Kött</div>
-    <div data-kategori="Frukt och grönt">Frukt och grönt</div>
-    <div data-kategori="Skafferi, kakor och snacks">Skafferi, kakor och snacks</div>
-    <div data-kategori="Dryck">Dryck</div>
-    <div data-kategori="Kryddor och såser">Kryddor och såser</div>
-    <div data-kategori="Överigt">Överigt</div>
-  </div>
-</div>
-  <div id="matvaror-container" class="flex-container3 matvaror-grid">
-</div>
-<footer>
-  <div class="footer-content">
-    <div class="footer-side left">
-      <div><strong>Kontakt:</strong> info@bluefood.se</div>
-      <div>08-123 99 99</div>
-    </div>
-    <div class="footer-center">
-      <img src="Images/logo.png" alt="Blue Food logga" class="footer-logo" />
-      <div class="footer-social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Vårt sortiment:</h1>
+      <div class="kategori-dropdown">
+        <button id="kategoriBtn">Kategorier &#9662;</button>
+      <div id="kategoriList" class="kategori-list">
+        <div data-kategori="alla">Alla</div>
+        <div data-kategori="Mejeri och ost">Mejeri och ost</div>
+        <div data-kategori="Fryst">Fryst</div>
+        <div data-kategori="Kött">Kött</div>
+        <div data-kategori="Frukt och grönt">Frukt och grönt</div>
+        <div data-kategori="Skafferi, kakor och snacks">Skafferi, kakor och snacks</div>
+        <div data-kategori="Dryck">Dryck</div>
+        <div data-kategori="Kryddor och såser">Kryddor och såser</div>
+        <div data-kategori="Överigt">Överigt</div>
       </div>
     </div>
-    <div class="footer-side right">
-      <div>
-        <a href="hem.html">Hem</a> |
-        <a href="matvaror.html">Matvaror</a> |
-        <a href="stammis.html">Bli stammis</a>
+    <div id="matvaror-container" class="flex-container3 matvaror-grid"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-side left">
+        <div><strong>Kontakt:</strong> info@bluefood.se</div>
+        <div>08-123 99 99</div>
       </div>
-      <div>© 2025 Blue Food</div>
+      <div class="footer-center">
+        <img src="Images/logo.png" alt="Blue Food logga" class="footer-logo" />
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-side right">
+        <div>
+          <a href="hem.html">Hem</a> |
+          <a href="matvaror.html">Matvaror</a> |
+          <a href="stammis.html">Bli stammis</a>
+        </div>
+        <div>© 2025 Blue Food</div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

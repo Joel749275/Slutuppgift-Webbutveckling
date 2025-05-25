@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <header>
     <div class="Logga">
-        <img id="logo" src="Images/logo.png" alt="Logga">
+      <img id="logo" src="Images/logo.png" alt="Logga">
     </div>
     <div class="hamburger">&#9776;</div>
-
-    <div class="navbar">
+    <nav class="navbar">
       <a href="hem.html">Hem</a>
       <a href="matvaror.html">Matvaror</a>
       <a href="stammis.html">Bli stammis</a>
@@ -30,54 +30,59 @@
           <a href="Middag.html">Middags tips</a>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <h1>Vet du inte vad du ska äta till middag idag, kika in våra tips nedan </h1>
+  <main>
+    <section>
+      <h1>Vet du inte vad du ska äta till middag idag, kika in våra tips nedan </h1>
+      <div class="flex-container3">
+        <a href="https://www.godare.se/recept/a/66L01e/autentiska-mexikanska-tacos">
+          <div><img src="Images/tacos.jpg" alt="Tacos"><h2>Mexikansk Tacos</h2><h4>4h</h4></div>
+        </a>
+        <a href="https://www.coop.se/recept/adelostpasta-med-kyckling-och-bacon/">
+          <div><img src="Images/ädelostpasta.jpg" alt="Ädelostpasta"><h2>Ädelostpasta</h2><h4>20 min</h4></div>
+        </a>
+        <a href="https://thebigmansworld.com/milanesa/">
+          <div><img src="Images/milanesa.jpg" alt="Milanesa"><h2>Milanesa med potatismos</h2><h4>20 min</h4></div>
+        </a>
+        <a href="https://www.anamma.eu/recept/klassiska-kottbullar-gjorda-pa-baljvaxtfars/">
+          <div><img src="Images/köttbullar.jpg" alt="köttbular"><h2>Hemlagade köttbullar</h2><h4>50 min</h4></div>
+        </a>
+        <a href="https://www.godare.se/recept/a/7dkye4/kycklinggryta-med-soltorkade-tomater">
+          <div><img src="Images/kyckling.jpg" alt="Kycklinggryta"><h2>Kycklinggryta</h2><h4>45 min</h4></div>
+        </a>
+        <a href="https://www.barilla.com/sv-se/recept/alla/lasagne-recept">
+          <div><img src="Images/lasagne.jpg" alt="Lasagne"><h2>Klassisk lasagne</h2><h4>60 min</h4></div>
+        </a>
+      </div>
+    </section>
+  </main>
 
-<div class="flex-container3">
-  <a href="https://www.godare.se/recept/a/66L01e/autentiska-mexikanska-tacos">
-  <div><img src="Images/tacos.jpg" alt="Tacos"><h2>Mexikansk Tacos</h2><h4>4h</h4></div>
-</a>
-<a href="https://www.coop.se/recept/adelostpasta-med-kyckling-och-bacon/">
-<div><img src="Images/ädelostpasta.jpg" alt="Ädelostpasta"><h2>Ädelostpasta</h2><h4>20 min</h4></div>
-</a>
-<a href="https://thebigmansworld.com/milanesa/">
-  <div><img src="Images/milanesa.jpg" alt="Milanesa"><h2>Milanesa med potatismos</h2><h4>20 min</h4></div>
-</a>
-<a href="https://www.anamma.eu/recept/klassiska-kottbullar-gjorda-pa-baljvaxtfars/">
-  <div><img src="Images/köttbullar.jpg" alt="köttbular"><h2>Hemlagade köttbullar</h2><h4>50 min</h4></div>
-</a>
-<a href="https://www.godare.se/recept/a/7dkye4/kycklinggryta-med-soltorkade-tomater">
-  <div><img src="Images/kyckling.jpg" alt="Kycklinggryta"><h2>Kycklinggryta</h2><h4>45 min</h4></div>
-</a>
-<a href="https://www.barilla.com/sv-se/recept/alla/lasagne-recept">
-  <div><img src="Images/lasagne.jpg" alt="Lasagne"><h2>Klassisk lasagne</h2><h4>60 min</h4></div>
-</a>
-</div>
-<footer>
-  <div class="footer-content">
-    <div class="footer-side left">
-      <div><strong>Kontakt:</strong> info@bluefood.se</div>
-      <div>08-123 99 99</div>
-    </div>
-    <div class="footer-center">
-      <img src="Images/logo.png" alt="Blue Food logga" class="footer-logo" />
-      <div class="footer-social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-side left">
+        <div><strong>Kontakt:</strong> info@bluefood.se</div>
+        <div>08-123 99 99</div>
+      </div>
+      <div class="footer-center">
+        <img src="Images/logo.png" alt="Blue Food logga" class="footer-logo" />
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-side right">
+        <div>
+          <a href="hem.html">Hem</a> |
+          <a href="matvaror.html">Matvaror</a> |
+          <a href="stammis.html">Bli stammis</a>
+        </div>
+        <div>© 2025 Blue Food</div>
       </div>
     </div>
-    <div class="footer-side right">
-      <div>
-        <a href="hem.html">Hem</a> |
-        <a href="matvaror.html">Matvaror</a> |
-        <a href="stammis.html">Bli stammis</a>
-      </div>
-      <div>© 2025 Blue Food</div>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
