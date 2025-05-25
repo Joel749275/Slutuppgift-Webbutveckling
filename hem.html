@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script defer src="script.js"></script>
   </head>
+
   <body>
     <div class="Logga">
       <img id="logo" src="Images/logo.png" alt="Logga" />
@@ -36,29 +37,71 @@
         </div>
       </div>
     </div>
-    <video
-      id="Background"
-      src="Background.mp4"
-      autoplay
-      muted
-      loop
-      playsinline
-    ></video>
 
-  <div class= "ikon-rad">
-    <a href="stammis.html">
-      <img src="Images/Stammis icon.png" alt="Medlem" />
-    </a>
-    <a href="matvaror.html">
-      <img src="Images/Matkasse icon.png" alt="Matkasse" />
-    </a>
-    <a href="Middag.html">
-      <img src="Images/Recept icon.png" alt="Recept" />
-    </a>
-  </div>
+  <main>
+    <section>
+      <video
+        id="Background"
+        src="Background.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+    </section>
 
-<footer>
-  <div class="footer-content">
+    <section>
+      <div class= "ikon-rad">
+        <a href="stammis.html">
+          <img src="Images/Stammis icon.png" alt="Medlem" />
+        </a>
+        <a href="matvaror.html">
+          <img src="Images/Matkasse icon.png" alt="Matkasse" />
+        </a>
+        <a href="Middag.html">
+          <img src="Images/Recept icon.png" alt="Recept" />
+        </a>
+      </div>
+    </section>
+
+    <section class="oppettider-section">
+      <table class="oppettider-tabell">
+      <thead>
+        <tr>
+          <th>Butik</th>
+          <th>Vardagar</th>
+          <th>Helg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Blue Food Täby</td>
+          <td>08:00 - 20:00</td>
+          <td>10:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Blue Food Solna</td>
+          <td>09:00 - 21:00</td>
+          <td>10:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Blue Food Södermalm</td>
+          <td>07:30 - 19:00</td>
+          <td>10:00 - 17:00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Avvikande tider kan förekomma vid helgdagar</td>
+        </tr>
+      </tfoot>
+      </table>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
     <div class="footer-side left">
       <div><strong>Kontakt:</strong> info@bluefood.se</div>
       <div>08-123 99 99</div>
@@ -80,7 +123,7 @@
       </div>
       <div>© 2025 Blue Food</div>
     </div>
-  </div>
-</footer>
+    </div>
+  </footer>
   </body>
 </html>
