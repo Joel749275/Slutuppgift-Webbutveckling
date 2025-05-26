@@ -688,6 +688,16 @@ ul.medlemsfördelar-lista li:hover {
   }
 }
 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  30% { transform: translateY(-18px);}
+  60% { transform: translateY(6px);}
+}
+
+.ikon-rad img:hover {
+  animation: bounce 0.5s;
+}
+
 /* Öppettider-tabell */
 .oppettider-section {
   max-width: 700px;
